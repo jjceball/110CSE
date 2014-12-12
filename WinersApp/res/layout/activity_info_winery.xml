@@ -1,0 +1,147 @@
+<!-- == WINERY INFO PAGE =========== -->
+<!-- == This is the  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostwhite"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context=".Home" >
+
+	<RelativeLayout android:id="@+id/info_winery_header"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="right"
+	    android:paddingLeft="@dimen/default_padding"
+	    android:paddingRight="@dimen/default_padding"
+	    android:paddingBottom="@dimen/default_padding"
+	    android:background="@color/black" >
+
+	    <!-- Rating --> 	 	    
+	    
+	    <ImageView
+	        android:id="@+id/info_winery_pic"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_gravity="right"
+	        android:layout_marginBottom="@dimen/default_padding"
+	        android:layout_marginLeft="@dimen/default_padding"
+	        android:layout_marginTop="@dimen/default_padding"
+	        android:layout_toRightOf="@+id/info_winery_name"
+	        android:cropToPadding="false"
+	        android:scaleType="centerCrop" />
+	    
+	    <!-- Name -->
+	    <TextView style="@style/InfoTitle"
+	        android:id="@+id/info_winery_name"
+	        android:paddingTop="@dimen/default_padding"
+	        android:layout_width="165dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/info_winery_name" />
+	    
+	    <!-- Wine Region -->
+  	    <TextView 
+	        android:id="@+id/info_winery_address1"
+	        android:textSize="12sp"
+	        android:layout_width="165dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/info_winery_name"
+	        android:text="@string/placeholder" />  
+	        
+  	    <TextView
+  	        android:id="@+id/info_winery_address2"
+	        android:textSize="12sp"
+	        android:layout_width="165dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/info_winery_address1"
+	        android:text="@string/placeholder" /> 
+	        
+  	    <TextView
+  	        android:id="@+id/info_winery_address3"
+	        android:textSize="12sp"
+	        android:layout_width="165dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/info_winery_address2"
+	        android:text="@string/placeholder" />   	    
+	    
+		<LinearLayout	
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	        android:layout_below="@+id/info_winery_pic"		    
+		    android:background="@drawable/bg_winered_rounded"
+		    android:orientation="horizontal" >    
+		    <Button
+		        android:id="@+id/info_winery_webpage"
+		        style="@style/ButtonTextInfo"	        
+		        android:background="@drawable/info_nav_border"	
+		        android:layout_width="140dp"
+		        android:layout_height="40dp"                        
+		        android:text="@string/info_winery_goto"
+		        android:onClick="openURL" />	 
+		        
+		    <Button
+		        android:id="@+id/info_winery_maps"
+		        android:background="@color/transparent"		        
+		        style="@style/ButtonTextInfo"	      
+		        android:layout_width="140dp"
+		        android:layout_height="40dp"
+		        android:text="@string/info_winery_map"
+		        android:onClick="openInMaps" />
+	    </LinearLayout>
+	        
+
+	</RelativeLayout>    
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_below="@+id/info_winery_header"	    
+	    >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+		<TableLayout
+		    android:id="@+id/info_winery_module_statistics"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="@dimen/default_padding"
+		    android:paddingLeft="18dp"
+			android:paddingRight="18dp"		    	    
+		    android:orientation="vertical" >
+		    
+		    <TextView
+		        android:id="@+id/info_winery_module_statistics_title"
+		        android:background="@drawable/module_titlebar"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		    	android:textColor="@color/white"				    
+			    android:orientation="vertical"
+		    	android:text="@string/info_title" />
+	
+		</TableLayout>
+		
+		<TableLayout
+		    android:id="@+id/info_winery_module_desc"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="@dimen/default_padding"
+		    android:shrinkColumns="0"
+		    android:paddingLeft="18dp"
+			android:paddingRight="18dp"		    	    
+		    android:orientation="vertical" >
+		    
+		    <TextView
+		        android:id="@+id/info_winery_module_desc_title"
+		        android:background="@drawable/module_titlebar"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		    	android:textColor="@color/white"				    
+			    android:orientation="vertical"
+		    	android:text="@string/about" />
+	
+		</TableLayout>		
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

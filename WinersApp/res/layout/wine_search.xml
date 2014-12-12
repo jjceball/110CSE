@@ -1,0 +1,128 @@
+
+<!--
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+    -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- For the Search Bar -->
+
+    <LinearLayout
+        android:id="@+id/search_bar_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:focusable="true" 
+        android:focusableInTouchMode="true">
+<!--  
+        <TextView
+            android:id="@+id/quick_search_divider"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/charcoal"
+            android:gravity="center_vertical"
+            android:text="@string/quick_search"
+            android:textColor="@android:color/white" />-->
+
+        <SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search_hint"
+            android:visibility="visible" >
+        </SearchView>
+    </LinearLayout>
+
+    <!-- Divider -->
+
+    <!--
+    <Button
+        android:id="@+id/e_cal_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar_location"
+        android:text="@string/hello_world" >
+    </Button>
+    -->
+
+    <LinearLayout
+        android:id="@+id/advanced_search_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar_location"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+<!--  
+        <TextView
+            android:id="@+id/advanced_search_divider"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/charcoal"
+            android:gravity="center_vertical"
+            android:text="@string/advanced_search"
+            android:textColor="@android:color/white" />-->
+    </LinearLayout>
+
+    <!-- Expandable List and buttons -->
+
+    <RelativeLayout
+        android:id="@+id/list_but_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/advanced_search_list_layout" >
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset" >
+            </Button>
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wine_search" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/buttons_layout"
+            android:layout_alignParentTop="true" >
+
+            <ExpandableListView
+                android:id="@android:id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:listSelector="@drawable/item_selector"
+                android:visibility="visible" >
+            </ExpandableListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

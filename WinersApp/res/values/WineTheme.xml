@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- == WINE THEME ===================================== -->
+<!-- Determines title bar display and default background -->
+<!-- =================================================== -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="WineTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowTitleSize">50dp</item>
+        <item name="android:windowTitleBackgroundStyle"> @style/windowTitleBackgroundStyle</item>
+        <item name="android:windowBackground">@color/cream</item> 
+        <item name="android:windowTitleStyle">@style/windowTitleStyle</item>
+        <item name="android:textColor">@color/white</item> 
+    </style>
+     <style name="windowTitleBackgroundStyle">
+    	<item name="android:background"> @color/burgandy </item>
+    </style>
+    <style name="windowTitleStyle">
+        <!-- BROKEN -->
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

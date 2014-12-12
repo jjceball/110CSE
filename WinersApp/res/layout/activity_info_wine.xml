@@ -1,0 +1,147 @@
+<!-- == WINE INFO PAGE =========== -->
+<!-- == This is the  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostwhite"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context=".Home" >
+
+	<RelativeLayout android:id="@+id/info_header"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" 
+	    android:gravity="right"
+	    android:paddingLeft="@dimen/default_padding"
+	    android:paddingRight="@dimen/default_padding"
+	    android:paddingBottom="@dimen/default_padding"
+	    android:background="@color/black" >
+
+	    <!-- Rating -->
+	    <RatingBar 
+	        android:id="@+id/info_rating"
+			style="?android:attr/ratingBarStyleSmall"              
+	        android:layout_width="60dp"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:layout_below="@+id/info_wine_region"
+	        android:layout_marginRight="@dimen/default_padding" /> 	 	    
+	    
+	    <ImageView
+	        android:id="@+id/info_pic"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:layout_gravity="right"
+	        android:layout_marginBottom="@dimen/default_padding"
+	        android:layout_marginLeft="@dimen/default_padding"
+	        android:layout_marginTop="@dimen/default_padding"
+	        android:layout_toRightOf="@+id/info_wine_name"
+	        android:contentDescription="@string/info_color"
+	        android:cropToPadding="false"
+	        android:scaleType="centerCrop" />
+	    
+	    <!-- Name -->
+	    <TextView style="@style/InfoTitle"
+	        android:id="@+id/info_wine_name"
+	        android:paddingTop="@dimen/default_padding"
+	        android:layout_width="165dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/info_name" />
+	    
+	    <!-- Wine Region -->
+ 	    <TextView 
+	        android:id="@+id/info_wine_region"
+	        android:textSize="12sp"
+	        android:layout_width="165dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/info_wine_name"
+	        android:text="@string/info_region" /> 
+	    
+ 	    <!-- Add to collection -->
+		<LinearLayout	
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	        android:layout_below="@+id/info_pic"		    
+		    android:background="@drawable/bg_winered_rounded"
+		    android:orientation="horizontal" >
+		    <Button
+		        android:id="@+id/info_button_add_wishlist"
+		        style="@style/ButtonTextInfo"
+		        android:background="@color/transparent"		        
+		        android:layout_width="70dp"
+		        android:layout_height="40dp"
+		        android:gravity="center"
+		        android:text="@string/info_add_wishlist" />
+	 	    
+		    <Button
+		        android:id="@+id/info_button_add_cellar"
+		        android:background="@drawable/info_nav_border"		        
+		        style="@style/ButtonTextInfo"
+		        android:layout_width="70dp"
+		        android:layout_height="40dp"	        
+		        android:text="@string/info_add_cellar" />
+		    
+		    <Button
+		        android:id="@+id/info_button_winery"
+		        style="@style/ButtonTextInfo"	        
+		        android:background="@drawable/info_nav_border"	
+		        android:layout_width="72dp"
+		        android:layout_height="40dp"                        
+		        android:text="@string/info_gotoWinery"
+		        android:onClick="viewWineryInfo" />	 
+		        
+		    <Button
+		        android:id="@+id/info_button_purchase"
+		        android:background="@color/transparent"		        
+		        style="@style/ButtonTextInfo"	      
+		        android:layout_width="72dp"
+		        android:layout_height="40dp"
+		        android:text="@string/info_buy"
+		        android:onClick="openInBrowser" />
+	    </LinearLayout>
+	        
+
+	</RelativeLayout>    
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:layout_below="@+id/info_header"	    
+	    >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+		<TableLayout
+		    android:id="@+id/info_module_statistics"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="@dimen/default_padding"
+		    android:paddingLeft="18dp"
+			android:paddingRight="18dp"		    	    
+		    android:orientation="vertical" >
+		    
+		    <TextView
+		        android:id="@+id/info_module_statistics_title"
+		        android:background="@drawable/module_titlebar"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		    	android:textColor="@color/white"				    
+			    android:orientation="vertical"
+		    	android:text="@string/info_information" />
+	
+		</TableLayout>
+		
+		<Button 
+		    android:id="@+id/info_see_similar"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/see_similar_wines"
+		    android:background="@drawable/btn_winered"
+		    android:layout_margin="@dimen/default_padding"
+		    style="@style/ButtonText"
+		    android:onClick="searchSimilar" />
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

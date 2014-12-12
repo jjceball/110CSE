@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_id">189778661175815</string>
+    <string name="app_name">Winetastic</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Daily Vine -->
+    <string name="fromTheVine">From the Vine</string>
+    <string name="toTheCellar">To the Cellar</string>
+    <string name="logo">Winetastic</string>
+    <string name="title_activity_daily_vine">Daily Vine</string>
+    
+    <!-- Winery of the Day -->
+    <string name="wineryOfDay">Winery of the Day</string>
+    <string name="info_vineyard">Vineyard</string>
+    <string name="info_visit">Visit</string>
+    
+    <!-- Wine of the Day -->
+    <string name="wineOfDay">Wine of the Day</string>
+    <string name="more_info">More Info</string>
+
+    <!-- Home Screen -->
+    <string name="search">Search Our MASSIVE Wine Database</string>
+    <string name="go_home">Home </string>
+    <string name="empty"></string>
+
+    <!-- Intro Guest Screen -->
+    <string name="find_wines">Find a Wine</string>
+    <string name="guest_goto_home">Home</string>
+    <string name="submit">Submit</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="facebook">Facebook</string>
+    <string name="returning_users">Returning Users</string>
+    <string name="login_with_email">Login with email</string>   
+    <string name="create_account">Create an Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_or">Or connect with</string>
+    <string name="guest_login">Already a user? <u>Click to log in.</u></string>
+
+    <!-- Strings related to login/logout -->
+    <string name="title_activity_login">Returning Users</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register"><b>Sign in</b> or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="logout_button">Log Out</string>
+    
+    <!-- Strings for testing purposes -->
+    <string name="cleardb">Clear Local DB</string>
+    <string name="placeholder">placeholder</string>
+    
+    <!-- Strings related to account registration -->
+	<string name="title_activity_register">New Users - Create an Account</string>
+	<string name="create_account_button">Create Account</string>
+	
+    <!-- Wine Search -->
+    <string name="wine_search_title"> Wine Search</string>
+    <string name="search_hint">Search wine name</string>
+    <string name="reset">Reset</string>
+    <string name="wine_search">Search</string>
+    <string name="quick_search">Quick Search</string>
+    <string name="advanced_search">Advanced Search</string>
+    <string name="searching">One moment while we find the best matches for your query..</string>
+	<string name="see_more">Show Next 20 Results</string>
+    
+    <!-- My Wines -->
+    <string name="my_wines_title"> My Wines </string>
+    <string name="wish_list_title"> Wish List </string>
+	<string name="removeModeTrue">Done removing wines</string>
+	<string name="removeModeFalse">Remove wines</string>   
+
+    <!-- Event Calendar -->
+    <string name="event_calendar_title"> Event Calendar </string>
+
+    <!-- Toast to Share -->
+    <string name="toast_to_share_title"> Toast to Share </string>
+
+    <!-- Add Wine -->
+    <string name="add_wine_title"> Add Wine </string>
+
+    <!-- Wine App Settings -->
+    <string name="wine_app_settings_title"> Settings </string>
+
+    <!-- Wine of the Day -->
+    <string name="img_none"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_event_calendar">EventCalendar</string>
+    <string name="title_activity_my_wines">MyWines</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_toast_to_share">ToastToShare</string>
+    <string name="title_activity_add_wine">AddWine</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_wine_app_settings">WineAppSettings</string>
+    <string name="none" />
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string name="title_activity_search_results">Search Results</string>
+
+    
+    <!-- Wine Search Results -->
+    <string name="wine_results">Wine Results</string>
+    <string name="title_activity_wine_info_page">Wine Info</string>
+
+    <!-- Wine Info Page-->
+    <string name="info_title">Information</string>
+    <string name="info_name">Wine name</string>
+    <string name="info_buy">Buy Wine</string>
+    <string name="info_region">Wine region</string>   
+    <string name="see_similar_wines">See Similar Wines</string> 
+
+    <string name="info_color">Color</string>
+    <string name="info_add_cellar">+Cellar</string>
+    <string name="info_add_wishlist">+Wishlist</string>    
+    <string name="info_gotoWinery">Winery</string>
+    <string name="info_information">Information</string>
+	<string name="info_descriptors">Descriptors</string>
+	
+	<!-- Winery Info Page -->
+	<string name="title_activity_winery_info_page">Winery</string>	
+	<string name="info_winery_name">Winery Name</string>
+	<string name="info_winery_description">Description</string>
+	<string name="info_winery_goto">Visit Website</string>
+	<string name="info_winery_map">Open in Maps</string>
+	<string name="about">About</string>	
+
+	
+    <string name="title_activity_login_activity_fb">LoginActivityFB</string>
+
+    <string name="title_activity_wine_wish_list">Wine Wish List</string>
+
+    <string name="title_activity_calendar">Event Calendar</string>
+
+</resources>

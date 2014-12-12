@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginWindow"
+	android:descendantFocusability="beforeDescendants"
+	android:focusableInTouchMode="true"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almostwhite"
+    android:minHeight="600dp"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <!-- TITLE BAR -->
+	
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/grapes" />
+    
+   	<TextView style="@style/LoginTitles"
+        	android:id="@+id/login_create_account"   	    
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	android:layout_below="@+id/login_img"     
+            android:text="@string/login_with_email" />    
+
+    <!-- LOGIN THROUGH EMAIL -->
+    <EditText style="@style/LoginField"
+        android:id="@+id/login_email"
+       	android:layout_below="@+id/login_create_account"	        
+        android:inputType="textEmailAddress"
+        android:hint="@string/email" />
+
+    <EditText style="@style/LoginField"
+        android:id="@+id/login_password"
+       	android:layout_below="@+id/login_email"	          
+       	android:inputType="textPassword"	
+        android:hint="@string/password" />
+    
+    <!--  Error message -->
+    <TextView android:id="@+id/login_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" 
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+    
+
+    <Button
+        android:id="@+id/login_submit"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_error"
+        android:layout_marginBottom="@dimen/default_padding"
+        android:layout_marginLeft="@dimen/default_padding"   
+        android:layout_marginRight="@dimen/default_padding" 
+        android:background="@drawable/btn_winered"
+        android:fontFamily="sans-serif"
+        android:text="@string/submit" />
+    <!-- ONE-CLICK LOGIN (GOOGLE/FB) -->
+
+  
+ 
+</RelativeLayout>
