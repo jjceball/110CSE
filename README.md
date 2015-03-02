@@ -1,3 +1,5 @@
 CSE110
 ======
-Code used in creating an Android App for CSE 110
+Code used in CSE 110, Software Engineering
+
+Core Language used: Android SDK (Java)
